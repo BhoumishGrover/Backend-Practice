@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@inquirer/prompts": "^7.3.1",
+    "qr-image": "^3.2.0"
+  }
+}
