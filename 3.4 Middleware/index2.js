@@ -1,6 +1,5 @@
 import express from "express";
 import morgan from "morgan";
-import nodemon from "nodemon";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));

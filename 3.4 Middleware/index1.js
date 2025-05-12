@@ -16,7 +16,13 @@ app.get("/", (req, res) => {
 
 app.post("/submit",(req,res)=>{
   console.log(req.body);
-  res.send("<h1>Data was replaced</h1>");
+
+  const street = req.body.user_street_name;
+  const pet = req.body.user_pet_name;
+
+  res.send(`<h1>Data Recieved: </h1> <br/>
+           <h3><strong>Street Name:</strong> ${street} <br/>
+           <h3><strong>Pet Name:</strong> ${pet}`);
 });
 
 app.listen(port, () => {
