@@ -65,7 +65,7 @@ app.get("/apiKey", async(req, res) => {
   //HINT: You need to provide a query parameter of apiKey in the request.
   
   try{
-  var yourAPIKey = await axios.get('https://secrets-api.appbrewery.com/generate-api-key');
+    var yourAPIKey = await axios.get('https://secrets-api.appbrewery.com/generate-api-key');
     yourAPIKey = yourAPIKey.data.apiKey;    //gets the apikey in the js object passed 
     console.log(`Your API key: ${yourAPIKey}`);
 
